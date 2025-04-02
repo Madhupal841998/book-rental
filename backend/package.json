@@ -1,0 +1,50 @@
+{
+  "name": "backend-task",
+  "version": "1.0.0",
+  "description": "Backend Task",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && nodemon --watch \"src/**/*.ts\" --ext ts --exec \"node dist/index.js\"",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "postgresql"
+  ],
+  "engines": {
+    "node": "22.13.17"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mime": "4.0.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "2.2.0",
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mime": "4.0.6",
+    "multer": "1.4.5-lts.2",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.14.1",
+    "reflect-metadata": "0.2.2",
+    "typeorm": "0.3.21",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "5.0.1",
+    "@types/express-serve-static-core": "5.0.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "1.4.12",
+    "@types/node": "22.13.17",
+    "@types/serve-static": "1.15.7",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.8.2"
+  }
+}
